@@ -6,17 +6,22 @@
     <script type="text/javascript" src="d3.js"></script>
   </head>
   <body>
+    <ol>
+
+    </ol>
     <script type="text/javascript">
-    var dataset = [5,10,15,20,25]
-    d3.select("body").selectAll("p").data(dataset).enter().append("p").text(function(d) {return d;}).style("color",
-    function(d){
-      if (d > 15) {
-        return "red";
-      }
-      else {
-        return "black";
-      }
-    });
+    var animals = ["Alpaca","Bear","Camel","Deer","Eel"]
+    d3.select("ol").selectAll("li").data(animals).enter().append("li").text(function(d){return d;})
+    // var dataset = [5,10,15,20,25]
+    // d3.select("body").selectAll("p").data(dataset).enter().append("p").text(function(d) {return d;}).style("color",
+    // function(d){
+    //   if (d > 15) {
+    //     return "red";
+    //   }
+    //   else {
+    //     return "black";
+    //   }
+    // });
     </script>
   </body>
 </html>
