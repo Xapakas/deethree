@@ -7,7 +7,8 @@
   </head>
   <body>
     <script type="text/javascript">
-    d3.select("body").append("p").text("New Paragraph!");
+    var ourdata = [1,2,3,4,5]
+    d3.select("body").selectAll("p").data("ourdata").enter().append("p").text("Hello World!")
     </script>
   </body>
 </html>
